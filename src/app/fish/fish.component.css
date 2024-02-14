@@ -1,0 +1,39 @@
+.caption {
+    cursor: pointer;
+    position: relative;
+}
+
+.a {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.caption:hover .image {
+    opacity: 0.8;
+}
+.caption:hover .middle {
+    opacity: 1;
+}
+.text {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 16px 32px;
+}
